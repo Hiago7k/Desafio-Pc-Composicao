@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+namespace Desafio_Pc_Composicao;
 
-namespace Desafio_Pc_Composicao
+internal class Computador
 {
-    internal class Computador
+    public Processador cpu;
+    public PlacaMae mobo;
+
+
+    public void ExibirConfiguracoes()
     {
+        Console.WriteLine("Computador configurado com: ");
+        Console.WriteLine(cpu);
+        Console.WriteLine(mobo);
     }
 }
