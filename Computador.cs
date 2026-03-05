@@ -3,14 +3,20 @@ namespace Desafio_Pc_Composicao;
 
 internal class Computador
 {
-    public Processador cpu;
-    public PlacaMae mobo;
+    public Processador Processador;
+    public PlacaMae PlacaMae;
 
+    public Computador(Processador processador, PlacaMae placaMae)
+    {
+        Processador = processador;
+        PlacaMae = placaMae;
+    }
 
     public void ExibirConfiguracoes()
     {
         Console.WriteLine("Computador configurado com: ");
-        Console.WriteLine(cpu);
-        Console.WriteLine(mobo);
+        Console.WriteLine($"Processador: {Processador.Marca} - {Processador.Modelo}");
+        Console.WriteLine($"Placa mae: {PlacaMae.Fabricante} - {PlacaMae.Socket}");
+        
     }
 }

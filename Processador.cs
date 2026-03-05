@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Desafio_Pc_Composicao;
 
-namespace Desafio_Pc_Composicao
+internal class Processador
 {
-    internal class Processador
+    public Processador(string marca, string modelo)
     {
+        Marca = marca;
+        Modelo = modelo;
     }
+
+    public string Marca { get;  }
+    public string Modelo { get;  }
 }
